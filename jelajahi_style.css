@@ -85,7 +85,7 @@ input, button {
     grid-template-columns: repeat(4, 200px);
     gap: 100px;
     margin: 150px 0 0;
-    padding: 0 80px 200px;
+    padding: 0 80px 60px;
     justify-content: center;
 }
 
@@ -149,7 +149,6 @@ input, button {
     border-top: 1px solid #F7F4E9;
 }
 
-/* Rating */
 .rating {
     display: flex;
     align-items: center;
@@ -180,9 +179,26 @@ input, button {
     transform: scale(1.2);
 }
 
-  /*   font-size: 16px;
-    line-height: 1.6;
-    padding: 40px 15px; */
+.pagination {
+    margin: 0px 210px 200px;
+    justify-content: start;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #6D4A37;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 
 footer {
     background-color: #FFF5E7;
