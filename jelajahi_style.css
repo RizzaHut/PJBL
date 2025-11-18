@@ -89,14 +89,14 @@ input, button {
     justify-content: center;
 }
 
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .cerita-container {
         grid-template-columns: repeat(3, 200px);
         gap: 90px;
     }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .cerita-container {
         grid-template-columns: repeat(2, 200px);
         gap: 80px;
@@ -104,7 +104,7 @@ input, button {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .cerita-container {
         grid-template-columns: repeat(1, 200px);
         gap: 70px;
