@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard_user_history.css">
+    <link rel="stylesheet" href="dashboard_user.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
@@ -18,11 +18,103 @@
 <body>
     <nav>
         <a href="beranda.html"><img class="nav_logo" src="cr_wrapper/logo_web.png" alt="Logo Gema Nusantara"> </a>
-        <a href="dashboard_user.html"><img class="icon"  id="active" src="sideNavBar/home2.svg"></a>
+        <a href="dashboard_user.html"><img class="icon" id="active" src="sideNavBar/home2.svg"></a>
         <a href="dashboard_user_suka.html"><img class="icon" src="sideNavBar/love1.png"></a>
         <a href="dashboard_user_simpan.html"><img class="icon" src="sideNavBar/bookmark1.svg"></a>
         <a href="dashboard_user_ulasan.html"><img class="icon" src="sideNavBar/comment1.png"></a>
-        <a href="dashboard_user_history.html"><img class="icon"src="sideNavBar/history1.png"></a>
+        <a href="dashboard_user_history.html"><img class="icon" src="sideNavBar/history1.png"></a>
     </nav>
+
+    <h1><span id="dashboard_header">Hallo Rangga</span></h1>
+
+    <section class="isi_dashboard">
+
+        <div class="dashboard_kiri">
+            <div class="rangkum_baca">
+
+                <div class="sedang_baca">
+                    <h2>Total Cerita Yang Sedang Dibaca</h2>
+                    <div class="baca_info">
+                        <img src="dashboardUser/Book.svg" alt="book icon">
+                        <h3>23</h3>
+                    </div>
+                </div>
+                <div class="selesai_baca">
+                    <h2>Total Cerita Yang Selesai Dibaca</h2>
+                    <div class="baca_info">
+                        <img src="dashboardUser/Book.svg" alt="book icon">
+                        <h3>23</h3>
+                    </div>
+                </div>
+            </div>
+            <section class="cerita_container">
+
+                <div class="cerita-wrapper">
+                    <img class="sampul" src="cr_wrapper/cover_cr/keong_mas.jpg" alt="Gambar Cerita Keong Mas">
+                    <h2>Keong Mas</h2>
+                    <hr>
+                    <div class="rating">
+                        <img class="star" src="cr_wrapper/star.png" title="Rating 4.5">
+                        <span class="rating-number">4.6</span>
+                        <img class="icon-small" src="cr_wrapper/like.png" title="Favorite">
+                        <img class="icon-small" src="cr_wrapper/icon.png" title="Share">
+                    </div>
+                </div>
+
+                <div class="cerita-wrapper">
+                    <img class="sampul" src="cr_wrapper/cover_cr/bawang.jpg"
+                        alt="Gambar Cerita Bawang Putih & Bawang Merah">
+                    <h2>Bawang Putih & Bawang Merah</h2>
+                    <hr>
+                    <div class="rating">
+                        <img class="star" src="cr_wrapper/star.png" title="Rating 4.5">
+                        <span class="rating-number">4.5</span>
+                        <img class="icon-small" src="cr_wrapper/like.png" title="Favorite">
+                        <img class="icon-small" src="cr_wrapper/icon.png" title="Share">
+                    </div>
+                </div>
+
+                <div class="cerita-wrapper">
+                    <img class="sampul" src="cr_wrapper/cover_cr/biwar_naga.jpg" alt="Gambar Cerita Biwar & Naga">
+                    <h2>Biwar & Naga</h2>
+                    <hr>
+                    <div class="rating">
+                        <img class="star" src="cr_wrapper/star.png" title="Rating 4.5">
+                        <span class="rating-number">4.4</span>
+                        <img class="icon-small" src="cr_wrapper/like.png" title="Favorite">
+                        <img class="icon-small" src="cr_wrapper/icon.png" title="Share">
+                    </div>
+                </div>
+
+                <div class="cerita-wrapper">
+                    <img class="sampul" src="cr_wrapper/cover_cr/timun_mas.jpg" alt="Gambar Cerita Timun Mas">
+                    <h2>Timun Mas</h2>
+                    <hr>
+                    <div class="rating">
+                        <img class="star" src="cr_wrapper/star.png" title="Rating 4.5">
+                        <span class="rating-number">4.7</span>
+                        <img class="icon-small" src="cr_wrapper/like.png" title="Favorite">
+                        <img class="icon-small" src="cr_wrapper/icon.png" title="Share">
+                    </div>
+                </div>
+            
+            </section>
+
+        </div>
+
+
+        <div class="dashboard_kanan">
+            <div class="grafik_baca">
+                <h2>Jumlah Membaca Per Hari</h2>
+                <img id="grafik" src="dashboardUser/grafik.png" alt="grafik batang jumlah membaca">
+            </div>
+
+            <div class="terakhir_baca">
+                <h2>Lanjutkan Membaca</h2>
+            </div>
+        </div>
+
+    </section>
 </body>
+
 </html>

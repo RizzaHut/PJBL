@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,500&display=swap');
+    </style>
+    <link rel="icon" href="cr_wrapper/logo_web.png">
+    <title>Gema Nusantara</title>
+</head>
+
+<body>
+    <div class="popup_container">
+        <h1>tes popup</h1>
+        <button id="open_popup">Popup</button>
+
+        <div id="popup_wrapper">
+            <div class="popup_header">
+                <h1>jhajdufbbwb</h1>
+                <div id="close_popup">x</div>
+            </div>
+            <div class="isi_popup">
+                hahibwbdwe[qd9rh2[ht0[4hf093nb24bf9u4bfbgi2b]]]
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    const openPopupButton = document.getElementById('open_popup');
+    const popup = document.getElementById('popup_wrapper');
+    const closePopupButton = document.getElementById('close_popup');
+
+    function openPopup () {
+        popup.classList.add('active');
+    }
+
+    function closePopup () {
+        popup.classList.remove('active');
+    }
+
+    openPopupButton.addEventListener('click', openPopup);
+    closePopupButton.addEventListener('click', closePopup);
+</script>

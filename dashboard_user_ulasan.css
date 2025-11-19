@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: "Poppins"; 
+    background-color: #FFFBE9;
+    color: #000;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height:100vmax;
+    background-color: #FEFDF7;
+    display: flex;
+    flex-direction: column;   
+    max-width: fit-content;
+    align-items: center;
+    padding: 0px 5px;
+    box-shadow: 0 0 10px #8d8a8a;
+}
+
+.nav_logo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 48px;
+    height: 42px;
+    
+}
+
+.icon {
+    margin: 15px 6px;
+    width: 25px;
+    height: 25px;
+}
+
+#active {
+    background-color: #6D4A37;
+    padding: 5px 5px;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+}
+ 
+#dashboard_header {
+    margin: auto 50px auto 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.ulasan_container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 50px 20px 120px;
+    justify-content: center;
+}
+
+.ulasan {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.ulasan_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #000;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.ulasan_top img {
+    height: 30px;
+    width: 30px;
+}
+
+.isi_ulasan {
+    padding: 10px 30px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.isi_ulasan 

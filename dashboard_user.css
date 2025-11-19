@@ -16,7 +16,7 @@ nav {
     flex-direction: column;   
     max-width: fit-content;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 5px;
     box-shadow: 0 0 10px #8d8a8a;
 }
 
@@ -29,14 +29,192 @@ nav {
 }
 
 .icon {
-    margin: 20px 6px;
-    width: 30px;
-    height: 30px;;
+    margin: 15px 6px;
+    width: 25px;
+    height: 25px;
 }
 
 #active {
     background-color: #6D4A37;
     padding: 5px 5px;
     border-radius: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+h1 {
+    margin: 15px auto 15px 100px;
 }
  
+#dashboard_header {
+    font-family: 'poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.isi_dashboard {
+    margin: 0 50px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.isi_dashboard h2 {
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dashboard_kiri {
+    display: flex;
+    flex-direction: column;
+}
+
+.rangkum_baca {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sedang_baca, .selesai_baca {
+    background-color: #Fff;
+    border-radius: 8px;
+    border: 2px solid #cac9c9;
+    padding: 5px 10px 20px;
+    align-items: center;
+}
+
+.baca_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.baca_info h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cerita_container {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    margin: 0;
+    gap: 10px;
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .cerita_container {
+        grid-template-columns: repeat(3, 200px);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .cerita_container {
+        grid-template-columns: repeat(2, 200px);
+        gap: 30px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .cerita_container {
+        grid-template-columns: repeat(1, 200px);
+        gap: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        margin: 30px auto;
+    }
+}
+
+.cerita-wrapper {
+    width: 130px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #6D4A36;
+    color: #F7F4E9;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sampul {
+    width: 100%;
+    height: 140px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.cerita-wrapper h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cerita-wrapper hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #F7F4E9;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+     transition: transform 0.2s ease;
+}
+
+.rating-number {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.icon-small {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icon-small:hover, .star:hover {
+    transform: scale(1.2);
+}
+
+.dashboard_kanan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.grafik_baca, .terakhir_baca {
+    background-color: #Fff;
+    border-radius: 8px;
+    border: 2px solid #cac9c9;
+    padding: 10px 0 0;
+    justify-content: center;
+}
+#grafik {
+    width: 400px;
+    height: 200px;
+}
+
