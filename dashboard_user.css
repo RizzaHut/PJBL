@@ -16,7 +16,7 @@ nav {
     flex-direction: column;   
     max-width: fit-content;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 5px;
     box-shadow: 0 0 10px #8d8a8a;
 }
 
@@ -29,14 +29,144 @@ nav {
 }
 
 .icon {
-    margin: 20px 6px;
-    width: 30px;
-    height: 30px;;
+    margin: 15px 6px;
+    width: 25px;
+    height: 25px;
 }
 
 #active {
     background-color: #6D4A37;
     padding: 5px 5px;
     border-radius: 10px;
+    width: 25px;
+    height: 25px;
 }
- 
+
+
+#dashboard_header {
+    margin: auto 50px 0px 100px;
+    display: flex;
+    justify-content: start;
+    font-family: 'poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.dashboard {
+    margin: 20px 50px 50px 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: max-content;
+}
+
+.dashboard h2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dashboard_kiri {
+    display: flex;
+    flex-direction: column;
+}
+
+.rangkum_baca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.isi_rangkum, .grafik_baca, .lanjut_baca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 10px 10px 10px;
+    background-color: #fff;
+    border: 2px solid#cccaca;
+    border-radius: 8px;
+}
+
+.isi_rangkum h2 {
+    font-size: 15px;
+}
+
+.rangkum_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.rangkum_detail img {
+    width: 50px;
+    height: 50px;
+}
+
+.rangkum_detail h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.grafik_baca {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.grafik_baca img{
+    height: 100%;
+    max-width: 330px;
+}
+
+.lanjut_baca img {
+    width: 120px;
+    height: 100%;
+}
+
+.isi_baca {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.isi_baca h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.baca_detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.isi_detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    gap: 5px;
+}
+
+.isi_detail p {
+    font-size: 10px;
+    margin: 5px 0 5px 0;
+}
+
+.isi_detail img {
+    width: 15px;
+    height: 15px;
+}
+
+#star {
+    color: rgb(255, 225, 0);
+    font-size: 15px;
+    margin: 0;
+}
+
+
