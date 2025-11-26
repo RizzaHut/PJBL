@@ -11,7 +11,7 @@ nav {
     bottom: 0;
     left: 0;
     height:100vmax;
-    background-color: #FEFDF7;
+    background-color: #Fff;
     display: flex;
     flex-direction: column;   
     max-width: fit-content;
@@ -41,7 +41,7 @@ nav {
     height: 25px;
 }
 
-#dashboard_header {
+#header_dashboard {
     margin: auto 50px 0px 100px;
     display: flex;
     justify-content: start;
@@ -54,36 +54,76 @@ nav {
     margin: 20px 50px 50px 100px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     width: max-content;
 }
 
 .dashboard_kiri {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .rangkum_data {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
 
 .isi_rangkum {
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;  
-    background-color: #FEFDF7;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px 10px;  
+    background-color: #Fff;
     border-radius: 8px;
     border: 1px solid #cccaca;
+    text-align: center;
 }
 
 .isi_rangkum h2 {
-    margin: 0;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.rangkum_detail {
-    display: flex;
-    flex-direction: row;
+.isi_rangkum img {
+    width:60px;
+    height: 60px;
+}
+
+.isi_rangkum h3 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.isi_rangkum p {
+    margin: 0;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.isi_rangkum .green {
+    color: rgb(95, 169, 95);
+}
+
+.isi_rangkum .red {
+    color: rgb(230, 65, 65);
+}
+
+.jumlah_pengunjung {
+    width: 535px;
+    height: 300px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #cccaca;
+    border-radius: 8px;
+}
+
+.jumlah_pengunjung h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 500;
 }

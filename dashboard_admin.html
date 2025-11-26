@@ -13,6 +13,8 @@
     </style>
     <link rel="icon" href="cr_wrapper/logo_web.png">
     <title>Gema Nusantara</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
 </head>
 
 <body>
@@ -32,25 +34,45 @@
             <div class="rangkum_data">
                 <div class="isi_rangkum">
                     <h2>Total Pengguna</h2>
-                        <img src="dashboardAdmin/users1.svg">
-                        <p><span class="rangkum_detail">+17 Pengguna baru pada bulan</span></p>
+                    <img src="dashboardAdmin/users1.svg">
+                    <h3>825</h3>
+                    <p><span class="green">+17 Pengguna baru pada bulan ini</span></p>
                 </div>
 
                 <div class="isi_rangkum">
                     <h2>Total Cerita Rakyat</h2>
-                        <img src="dashboardAdmin/users1.svg">
-                        <p><span class="rangkum_detail">+17 Pengguna baru pada bulan </span></p>
+                    <img src="dashboardAdmin/book1.svg">
+                    <h3>113</h3>
+                    <p><span class="green">+2 Cerita baru pada bulan ini</span></p>
                 </div>
 
                 <div class="isi_rangkum">
-                    <h2>Total Pengunjung Bulan Ini</h2>
-                        <img src="dashboardAdmin/users1.svg">
-                        <p><span class="rangkum_detail">+17 Pengguna baru pada bulan </span></p>
+                    <h2>Total Penggunjung <br>Bulan Ini</h2>
+                    <img src="dashboardAdmin/users1.svg">
+                    <h3>6.740</h3>
+                    <p><span class="red">9% Lebih rendah dibandingkan <br> bulan sebelumnya</span></p>
                 </div>
+            </div>
 
+            <div class="jumlah_pengunjung">
+                <h2>Jumlah Pengunjung Harian</h2>
+                <canvas id="grafikPengunjung"></canvas>
             </div>
         </div>
 
+        <div class="dashboard_kanan">
+            <div class="cerita_terpopuler">
+                <canvas id="grafikTerpopuler"></canvas>
+            </div>
+
+            <div class="rating_tertinggi">
+                <canvas id="grafikRatingTertinggi"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="dashboard_admin.js"></script>
 </body>
 
 </html>
