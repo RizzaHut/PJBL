@@ -56,6 +56,7 @@ nav {
     flex-direction: row;
     gap: 20px;
     width: max-content;
+
 }
 
 .dashboard_kiri {
@@ -132,28 +133,23 @@ nav {
 .dashboard_kanan {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 .cerita_terpopuler {
-    height: 200px;
+    width: 500px;
+    height: 230px;
     padding: 15px 10px;
     background-color: #fff;
     border: 1px solid #cccaca;
     border-radius: 8px;
 }
 
-.grafik_terpopuler {
-    display: flex;
-    flex-direction: row;
-}
-
-.grafik_detail {
-    display: flex;
-    flex-direction: column;
-}
-
-.isi_detail {
-    display: flex;
-    flex-direction: row;
+.rating_tertinggi {
+    width: 500px;
+    height: 240px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #cccaca;
+    border-radius: 8px;
 }
